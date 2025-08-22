@@ -16,4 +16,5 @@ Esta es una **plantilla** basada en [MkDocs](https://www.mkdocs.org/) + [Materia
 ## Integrantes de equipo:
 
 Abraham Domínguez Noda
+![Diagrama del sistema](recursos/imgs/Abrahamfoto.jpg)
 José Gil González Berra
