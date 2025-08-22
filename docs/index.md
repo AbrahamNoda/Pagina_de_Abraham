@@ -17,6 +17,7 @@ Esta es una **plantilla** basada en [MkDocs](https://www.mkdocs.org/) + [Materia
 
 Abraham Domínguez Noda
 
-<img src="recursos/imgs/Abrahamfoto.jpg" alt="Diagrama del sistema" width="300">
+<img src="recursos/imgs/Abrahamfoto.jpg" alt="Diagrama del sistema" width="300">  Me gusta la tecnologia 
+Estoy orgulloso de haber hecho sin ayuda nada más que de TikTok, haber hecho un sircuito con focos leds que tengan la funcion de ser unas direccionales, intermitentes, faros, altas y calaberas; además le puse un motor electrico ya que este solo contaba con uno "Pull and back"
 
 José Gil González Berra
