@@ -12,3 +12,8 @@ Esta es una **plantilla** basada en [MkDocs](https://www.mkdocs.org/) + [Materia
    site_name: Documentación del Curso
    theme:
      name: material
+
+## Integrantes de equipo:
+
+Abraham Domínguez Noda
+José Gil González Berra
