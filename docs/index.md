@@ -17,5 +17,5 @@ Esta es una **plantilla** basada en [MkDocs](https://www.mkdocs.org/) + [Materia
 
 Abraham Domínguez Noda
 ![Diagrama del sistema](recursos/imgs/Abrahamfoto.jpg)
-<img src="../recursos/imgs/Abrahamfoto.jpg" alt="Diagrama del sistema" width="300">
+<img src="recursos/imgs/Abrahamfoto.jpg" alt="Diagrama del sistema" width="300">
 José Gil González Berra
