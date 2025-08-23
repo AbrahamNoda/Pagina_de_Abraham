@@ -29,7 +29,7 @@ Esta es una **plantilla** basada en [MkDocs](https://www.mkdocs.org/) + [Materia
 ---
 2. José Gil González Berra
 
-<img src="recursos/imgs/Abrahamfoto.jpg" alt="Diagrama del sistema" width="300">
+<img src="recursos/imgs/gilfoto.jpeg" alt="Diagrama del sistema" width="300">
 
 - **Carrera:** Ingenieria Mecatronica
 - **Lugar de origen:** Tabasco
