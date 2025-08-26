@@ -24,6 +24,8 @@ Esta es una **plantilla** basada en [MkDocs](https://www.mkdocs.org/) + [Materia
      * Estoy orgulloso de haber hecho sin ayuda nada más que de TikTok, haber hecho un circuito con focos leds que tengan la funcion de ser unas direccionales, intermitentes, faros, altas y calaberas; además le puse un motor electrico ya que este solo contaba con uno "Pull and back".
 - **¿Qué estudio?**
      * Ingenieria Mecatrónica.
+- **Me puedes localizar en:**
+   *203599@iberopuenla.mx*
 
 
 
@@ -47,4 +49,7 @@ Esta es una **plantilla** basada en [MkDocs](https://www.mkdocs.org/) + [Materia
      * De estar en la IBERO
 - **¿Qué estudio?**
      * Ingenieria Mecatrónica.
+       
+- **Me puedes localizar en:**
+     *203536@iberopuebla.mx*
 
