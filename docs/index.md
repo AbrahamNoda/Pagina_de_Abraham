@@ -25,7 +25,7 @@ Esta es una **plantilla** basada en [MkDocs](https://www.mkdocs.org/) + [Materia
 - **¿Quién soy?**
      * Me llamo Abraham Domínguez Noda, tengo 17 años
 - **Lugar de origen:**
-     *Vengo del Estado de México
+     * Vengo del Estado de México
 - **Intereses**
      * Me gusta la tecnología
 - **¿De que me enorgullezco?**
@@ -56,17 +56,3 @@ Esta es una **plantilla** basada en [MkDocs](https://www.mkdocs.org/) + [Materia
 - **¿Qué estudio?**
      * Ingenieria Mecatrónica.
 
-
-
-
-
-- **Carrera:** Ingenieria Mecatronica
-- **Lugar de origen:** Tabasco
-- **Cosas que me gustan:**
-     * Me gusta la tecnología
-     * Me gustan los videojuegos
-     * Mi deporte favorito es el futbol
-- **¿De que me enorgullezco?**
-     * Tener un promedio de 9.8 de preparatoria
-     * De estar en la IBERO
-       
