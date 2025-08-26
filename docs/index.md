@@ -20,7 +20,7 @@ Esta es una **plantilla** basada en [MkDocs](https://www.mkdocs.org/) + [Materia
 
 <img src="recursos/imgs/Abrahamfoto.jpg" alt="Diagrama del sistema" width="300">  
 
-- ### Descripción personal
+### Descripción personal
 
 - **¿Quién soy?**
      * Me llamo Abraham Domínguez Noda, tengo 17 años
@@ -40,7 +40,7 @@ Esta es una **plantilla** basada en [MkDocs](https://www.mkdocs.org/) + [Materia
 
 <img src="recursos/imgs/gilfoto.jpeg" alt="Diagrama del sistema" width="300">
 
-- ### Descripción personal
+### Descripción personal
 
 - **¿Quién soy?**
      * Me llamó José Gil González Berra, tengo 17 años 
