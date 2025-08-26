@@ -25,7 +25,7 @@ Esta es una **plantilla** basada en [MkDocs](https://www.mkdocs.org/) + [Materia
 - **¿Qué estudio?**
      * Ingenieria Mecatrónica.
 - **Me puedes localizar en:**
-   *203599@iberopuenla.mx*
+   *203599@iberopuebla.mx*
 
 
 
