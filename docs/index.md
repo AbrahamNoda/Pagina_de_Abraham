@@ -23,7 +23,7 @@ Esta es una **plantilla** basada en [MkDocs](https://www.mkdocs.org/) + [Materia
 - ### Descripción personal
 
 - **¿Quién soy?**
-      *
+      * Me llamo Abraham Domínguez Noda, tengo 17 años
 - **Lugar de origen:**
       *Vengo del Estado de México
 - **Intereses**
@@ -43,7 +43,7 @@ Esta es una **plantilla** basada en [MkDocs](https://www.mkdocs.org/) + [Materia
 - ### Descripción personal
 
 - **¿Quién soy?**
-   * Me llamó José Gil González Berra, tengo 17 años 
+      * Me llamó José Gil González Berra, tengo 17 años 
 - **Lugar de origen:**
       * Tabasco
 - **Intereses**
