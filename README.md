@@ -138,3 +138,9 @@ Si no aparece:
 └─ .github/
    └─ workflows/      # flujo para publicar automáticamente
 ```
+
+
+
+
+https://github.com/user-attachments/assets/f011dfed-f5e9-4113-980e-94f8bbb1dd53
+
