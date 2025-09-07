@@ -5,4 +5,5 @@ Esta practiica podemos observar el uso de un circuito integrado 555 de manera as
 
 
 https://github.com/user-attachments/assets/a55c972d-851a-4645-9918-f97dc848011a
-
+![video](recursos/videos/https://github.com/user-attachments/assets/a55c972d-851a-4645-9918-f97dc848011a)
+ 
