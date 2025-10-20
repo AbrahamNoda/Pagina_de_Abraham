@@ -13,22 +13,40 @@ Esta practiica podemos observar el uso de un circuito integrado 555 de manera as
 Esta practica consistio en usar un ESP32 para controlar de distantas maneras un led sea desde solo el ESP32, como con este y un botón y por medio de bluetooth.
 
 
-ESP32 solo:
-1  const int led=33<br>
-2<br>
-3<br>
-4  void setup () {<br>
-5  Serial. begin (115200);<br>
-6  pinMode (Led, OUTPUT) ;<br>
-7  }<br>
-8<br>
-9<br>
-10 void lo0p() {<br>
-11 digitalWrite(led,1);<br>
-12 delay (1000);<br>
-13 digitalwrite(led,0);<br>
-14 delay (1000);<br>
-15 }<br>
+ESP32 solo:<br>
+ const int led=33<br>
+<br>
+  void setup () {<br>
+  Serial. begin (115200);<br>
+  pinMode (Led, OUTPUT) ;<br>
+ }<br>
+<br>
+<br>
+ void lo0p() {<br>
+ digitalWrite(led,1);<br>
+ delay (1000);<br>
+ digitalwrite(led,0);<br>
+ delay (1000);<br>
+ }<br>
 
 https://github.com/user-attachments/assets/6e66b9b6-49fc-4279-bbd0-478fd867dd4a 
 
+ESP32 con botón:<br>
+<br>
+const int led=33;<br>
+const int btn=34;<br>
+void setup() {<br>
+  Serial.begin(115200);<br>
+  pinMode(led,OUTPUT);<br>
+  pinMode(btn,INPUT);<br>
+}<br>
+
+void loop() {<br>
+  int estado = digitalRead(btn);<br>
+  if(estado == 1 ){<br>
+    digitalWrite(led,1);<br>
+  }<br>
+  else{<br>
+    digitalWrite(led,0);
+  }
+}
