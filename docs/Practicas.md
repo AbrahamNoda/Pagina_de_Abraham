@@ -80,3 +80,62 @@ void loop() {<br>
 <br>
 [ESP32 Bluetooth]https://github.com/user-attachments/assets/15d742b1-f1fd-4519-a911-5364dd9c4c94 
 
+## Práctica 3
+
+En esta practica observaremos a base de un ESP32 combinado a un puente H, sumado de un motor el cambio de dirección y su acelereación y desaceleración.
+
+### Aceleración:<br>
+<br>
+#define in1 25<br>
+#define in2 26<br>
+int var=20;<br>
+ <br>
+void setup() {<br>
+ <br>
+  pinMode(in1, OUTPUT);<br>
+  pinMode(in2, OUTPUT);<br>
+  ledcAttachChannel(3, 1000, 8 , 0);<br>
+  Serial.begin(115200);<br>
+ <br>
+}<br>
+ <br>
+void loop() {<br>
+  Serial.println(var);<br>
+  ledcWrite(18, var);<br>
+  digitalWrite(in1,1);<br>
+  digitalWrite(in2,0);<br>
+  delay(1000);<br>
+  var=var+20;<br>
+  if(var>255){<br>
+     var=var-80;<br>
+  }  <br>
+  delay(1000);<br>
+}<br>
+
+[Aceleración, desaceleración]
+
+### Cambio de dirección:<br>
+<br>
+#define in1 25<br>
+#define in2 26<br>
+<br>
+void setup() {<br>
+  pinMode(in1, OUTPUT);<br>
+  pinMode(in2, OUTPUT);<br>
+}<br>
+<br>
+void loop() {<br>
+<br>
+    digitalWrite(in1, 1); <br>
+    digitalWrite(in2, 0); <br>
+    delay(3000);<br>
+    digitalWrite(in1, 0); <br>
+    digitalWrite(in2, 0); <br>
+    delay(1000);<br>
+    digitalWrite(in1, 0); <br>
+    digitalWrite(in2, 1); <br>
+    delay(1000); <br>
+  }<br>
+  <br>
+  
+[Cambio de dirección] https://github.com/user-attachments/assets/4e1e3c5b-193a-47d9-be2c-e228a90f1efe
