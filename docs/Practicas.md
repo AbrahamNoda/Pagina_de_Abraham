@@ -30,7 +30,7 @@ Esta practica consistio en usar un ESP32 para controlar de distantas maneras un 
  delay (1000);<br>
  }<br>
 
-https://github.com/user-attachments/assets/6e66b9b6-49fc-4279-bbd0-478fd867dd4a 
+[ESP32 solo] https://github.com/user-attachments/assets/6e66b9b6-49fc-4279-bbd0-478fd867dd4a 
 
 ### ESP32 con botón:<br>
 <br>
@@ -53,3 +53,30 @@ void loop() {<br>
 }<br>
 
 [ESP32 con botón] https://github.com/user-attachments/assets/2fb48297-2228-4e13-8b8e-80b5b23b4017
+
+### ESP32 Bluetooth:<br>
+<br>
+#include "BluetoothSerial.h"<br>
+BluetoothSerial SerialBT;<br>
+const int led=33;<br>
+void setup() {<br>
+  pinMode(led,OUTPUT);<br>
+    Serial.begin(115200);<br>
+    SerialBT.begin("AbrahamEsp32"); // Nombre del dispositivo Bluetooth<br>
+}<br>
+<br>
+void loop() {<br>
+    if (SerialBT.available()) {<br>
+        String mensaje = SerialBT.readString();<br>
+        Serial.println("Recibido: " + mensaje);<br>
+        if(mensaje == "on" ){<br>
+    digitalWrite(led,1);<br>
+  }<br>
+  else{<br>
+    digitalWrite(led,0);<br>
+    }}<br>
+    delay(100);<br>
+}<br>
+<br>
+[ESP32 Bluetooth]https://github.com/user-attachments/assets/15d742b1-f1fd-4519-a911-5364dd9c4c94 
+
