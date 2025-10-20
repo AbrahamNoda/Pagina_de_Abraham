@@ -14,72 +14,73 @@ Esta practica consistio en usar un ESP32 para controlar de distantas maneras un 
 
 
 ### ESP32 solo:<br>
-<br>
-``` 
- const int led=33<br>
-<br>
-  void setup () {<br>
-  Serial. begin (115200);<br>
-  pinMode (Led, OUTPUT) ;<br>
- }<br>
-<br>
-<br>
- void lo0p() {<br>
- digitalWrite(led,1);<br>
- delay (1000);<br>
- digitalwrite(led,0);<br>
- delay (1000);<br>
- }<br>
+
+```
+const int led=33
+
+  void setup () {
+  Serial. begin (115200);
+  pinMode (Led, OUTPUT) ;
+ }
+
+
+ void lo0p() {
+ digitalWrite(led,1);
+ delay (1000);
+ digitalwrite(led,0);
+ delay (1000);
+ }
 ``` 
 
 [ESP32 solo](https://github.com/user-attachments/assets/6e66b9b6-49fc-4279-bbd0-478fd867dd4a)
 
 ### ESP32 con botón:<br>
-<br>
-const int led=33;<br>
-const int btn=34;<br>
-void setup() {<br>
-  Serial.begin(115200);<br>
-  pinMode(led,OUTPUT);<br>
-  pinMode(btn,INPUT);<br>
-}<br>
+``` 
+const int led=33;
+const int btn=34;
+void setup() {
+  Serial.begin(115200);
+  pinMode(led,OUTPUT);
+  pinMode(btn,INPUT);
+}
 
-void loop() {<br>
-  int estado = digitalRead(btn);<br>
-  if(estado == 1 ){<br>
-    digitalWrite(led,1);<br>
-  }<br>
-  else{<br>
+void loop() {
+  int estado = digitalRead(btn);
+  if(estado == 1 ){
+    digitalWrite(led,1);
+  }
+  else{
     digitalWrite(led,0);
   }
-}<br>
+}
+``` 
 
 [ESP32 con botón](https://github.com/user-attachments/assets/2fb48297-2228-4e13-8b8e-80b5b23b4017)
 
 ### ESP32 Bluetooth:<br>
-<br>
-include "BluetoothSerial.h"<br>
-BluetoothSerial SerialBT;<br>
-const int led=33;<br>
-void setup() {<br>
-  pinMode(led,OUTPUT);<br>
-    Serial.begin(115200);<br>
-    SerialBT.begin("AbrahamEsp32"); // Nombre del dispositivo Bluetooth<br>
-}<br>
-<br>
-void loop() {<br>
-    if (SerialBT.available()) {<br>
-        String mensaje = SerialBT.readString();<br>
-        Serial.println("Recibido: " + mensaje);<br>
-        if(mensaje == "on" ){<br>
-    digitalWrite(led,1);<br>
-  }<br>
-  else{<br>
-    digitalWrite(led,0);<br>
-    }}<br>
-    delay(100);<br>
-}<br>
-<br>
+``` 
+#include "BluetoothSerial.h"
+BluetoothSerial SerialBT;
+const int led=33;
+void setup() {
+  pinMode(led,OUTPUT);
+    Serial.begin(115200);
+    SerialBT.begin("AbrahamEsp32"); // Nombre del dispositivo Bluetooth
+}
+
+void loop() {
+    if (SerialBT.available()) {
+        String mensaje = SerialBT.readString();
+        Serial.println("Recibido: " + mensaje);
+        if(mensaje == "on" ){
+    digitalWrite(led,1);
+  }
+  else{
+    digitalWrite(led,0);
+    }}
+    delay(100);
+}
+``` 
 [ESP32 Bluetooth](https://github.com/user-attachments/assets/15d742b1-f1fd-4519-a911-5364dd9c4c94)
 
 ## Práctica 3
@@ -87,58 +88,60 @@ void loop() {<br>
 En esta practica observaremos a base de un ESP32 combinado a un puente H, sumado de un motor el cambio de dirección y su acelereación y desaceleración.
 
 ### Aceleración:<br>
-<br>
-define in1 25<br>
-define in2 26<br>
-int var=20;<br>
+``` 
+#define in1 25
+#define in2 26
+int var=20;
  <br>
-void setup() {<br>
+void setup() {
  <br>
-  pinMode(in1, OUTPUT);<br>
-  pinMode(in2, OUTPUT);<br>
-  ledcAttachChannel(3, 1000, 8 , 0);<br>
-  Serial.begin(115200);<br>
- <br>
-}<br>
- <br>
-void loop() {<br>
-  Serial.println(var);<br>
-  ledcWrite(18, var);<br>
-  digitalWrite(in1,1);<br>
-  digitalWrite(in2,0);<br>
-  delay(1000);<br>
-  var=var+20;<br>
-  if(var>255){<br>
-     var=var-80;<br>
-  }  <br>
-  delay(1000);<br>
-}<br>
+  pinMode(in1, OUTPUT);
+  pinMode(in2, OUTPUT);
+  ledcAttachChannel(3, 1000, 8 , 0);
+  Serial.begin(115200);
+ 
+}
+ 
+void loop() {
+  Serial.println(var);
+  ledcWrite(18, var);
+  digitalWrite(in1,1);
+  digitalWrite(in2,0);
+  delay(1000);
+  var=var+20;
+  if(var>255){
+     var=var-80;
+  }  
+  delay(1000);
+}
+``` 
 
 ![Diagrama del sistema](recursos/imgs/FotoESP32motoraceleracion.jpg) 
 
 
 ### Cambio de dirección:<br>
-<br>
-define in1 25<br>
-define in2 26<br>
-<br>
-void setup() {<br>
-  pinMode(in1, OUTPUT);<br>
-  pinMode(in2, OUTPUT);<br>
-}<br>
-<br>
-void loop() {<br>
-<br>
-    digitalWrite(in1, 1); <br>
-    digitalWrite(in2, 0); <br>
-    delay(3000);<br>
-    digitalWrite(in1, 0); <br>
-    digitalWrite(in2, 0); <br>
-    delay(1000);<br>
-    digitalWrite(in1, 0); <br>
-    digitalWrite(in2, 1); <br>
-    delay(1000); <br>
-  }<br>
-  <br>
+``` 
+#define in1 25
+#define in2 26
+
+void setup() {
+  pinMode(in1, OUTPUT);
+  pinMode(in2, OUTPUT);
+}
+
+void loop() {
+
+    digitalWrite(in1, 1); 
+    digitalWrite(in2, 0); 
+    delay(3000);
+    digitalWrite(in1, 0); 
+    digitalWrite(in2, 0); 
+    delay(1000);
+    digitalWrite(in1, 0); 
+    digitalWrite(in2, 1); 
+    delay(1000); 
+  }
+``` 
+  
   
 [Cambio de dirección](https://github.com/user-attachments/assets/4e1e3c5b-193a-47d9-be2c-e228a90f1efe)
