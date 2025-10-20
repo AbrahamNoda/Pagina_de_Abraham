@@ -30,3 +30,5 @@ digitalwrite(led,0);
 delay (1000);
 }
 
+[Practica 2] https://github.com/user-attachments/assets/6e66b9b6-49fc-4279-bbd0-478fd867dd4a
+
