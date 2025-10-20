@@ -30,7 +30,7 @@ Esta practica consistio en usar un ESP32 para controlar de distantas maneras un 
  delay (1000);<br>
  }<br>
 
-[ESP32 solo] https://github.com/user-attachments/assets/6e66b9b6-49fc-4279-bbd0-478fd867dd4a 
+[ESP32 solo](https://github.com/user-attachments/assets/6e66b9b6-49fc-4279-bbd0-478fd867dd4a)
 
 ### ESP32 con botón:<br>
 <br>
@@ -52,7 +52,7 @@ void loop() {<br>
   }
 }<br>
 
-[ESP32 con botón] https://github.com/user-attachments/assets/2fb48297-2228-4e13-8b8e-80b5b23b4017
+[ESP32 con botón](https://github.com/user-attachments/assets/2fb48297-2228-4e13-8b8e-80b5b23b4017)
 
 ### ESP32 Bluetooth:<br>
 <br>
@@ -78,7 +78,7 @@ void loop() {<br>
     delay(100);<br>
 }<br>
 <br>
-[ESP32 Bluetooth]https://github.com/user-attachments/assets/15d742b1-f1fd-4519-a911-5364dd9c4c94 
+[ESP32 Bluetooth](https://github.com/user-attachments/assets/15d742b1-f1fd-4519-a911-5364dd9c4c94)
 
 ## Práctica 3
 
@@ -139,4 +139,4 @@ void loop() {<br>
   }<br>
   <br>
   
-[Cambio de dirección] https://github.com/user-attachments/assets/4e1e3c5b-193a-47d9-be2c-e228a90f1efe
+[Cambio de dirección](https://github.com/user-attachments/assets/4e1e3c5b-193a-47d9-be2c-e228a90f1efe)
