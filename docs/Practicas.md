@@ -15,6 +15,7 @@ Esta practica consistio en usar un ESP32 para controlar de distantas maneras un 
 
 ### ESP32 solo:<br>
 <br>
+``` 
  const int led=33<br>
 <br>
   void setup () {<br>
@@ -29,6 +30,7 @@ Esta practica consistio en usar un ESP32 para controlar de distantas maneras un 
  digitalwrite(led,0);<br>
  delay (1000);<br>
  }<br>
+``` 
 
 [ESP32 solo](https://github.com/user-attachments/assets/6e66b9b6-49fc-4279-bbd0-478fd867dd4a)
 
@@ -56,7 +58,7 @@ void loop() {<br>
 
 ### ESP32 Bluetooth:<br>
 <br>
-#include "BluetoothSerial.h"<br>
+include "BluetoothSerial.h"<br>
 BluetoothSerial SerialBT;<br>
 const int led=33;<br>
 void setup() {<br>
@@ -86,8 +88,8 @@ En esta practica observaremos a base de un ESP32 combinado a un puente H, sumado
 
 ### Aceleración:<br>
 <br>
-#define in1 25<br>
-#define in2 26<br>
+define in1 25<br>
+define in2 26<br>
 int var=20;<br>
  <br>
 void setup() {<br>
@@ -117,8 +119,8 @@ void loop() {<br>
 
 ### Cambio de dirección:<br>
 <br>
-#define in1 25<br>
-#define in2 26<br>
+define in1 25<br>
+define in2 26<br>
 <br>
 void setup() {<br>
   pinMode(in1, OUTPUT);<br>
