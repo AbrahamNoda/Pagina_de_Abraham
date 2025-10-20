@@ -51,4 +51,6 @@ void loop() {<br>
   else{<br>
     digitalWrite(led,0);
   }
-}
+}<br>
+
+[Enlace directo]: https://github.com/user-attachments/assets/2fb48297-2228-4e13-8b8e-80b5b23b4017
