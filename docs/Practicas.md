@@ -112,7 +112,7 @@ void loop() {<br>
   delay(1000);<br>
 }<br>
 
-[Aceleración, desaceleración]
+![Diagrama del sistema](recursos/imgs/FotoESP32motoraceleracion.jpg) 
 
 ### Cambio de dirección:<br>
 <br>
