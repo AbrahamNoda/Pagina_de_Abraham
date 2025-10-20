@@ -13,7 +13,7 @@ Esta practiica podemos observar el uso de un circuito integrado 555 de manera as
 Esta practica consistio en usar un ESP32 para controlar de distantas maneras un led sea desde solo el ESP32, como con este y un botón y por medio de bluetooth.
 
 
-ESP32:
+ESP32 solo:
 const int led=33;
 
 
@@ -30,5 +30,6 @@ digitalwrite(led,0);
 delay (1000);
 }
 
-[Practica 2] https://github.com/user-attachments/assets/6e66b9b6-49fc-4279-bbd0-478fd867dd4a
+[Practica 2][doc-ref]
+[doc-ref]:https://github.com/user-attachments/assets/6e66b9b6-49fc-4279-bbd0-478fd867dd4a "Práctica 2"
 
