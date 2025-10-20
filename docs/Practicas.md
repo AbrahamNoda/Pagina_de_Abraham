@@ -114,6 +114,7 @@ void loop() {<br>
 
 ![Diagrama del sistema](recursos/imgs/FotoESP32motoraceleracion.jpg) 
 
+
 ### Cambio de dirección:<br>
 <br>
 #define in1 25<br>
