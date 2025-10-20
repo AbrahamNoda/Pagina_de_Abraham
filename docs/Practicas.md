@@ -14,21 +14,21 @@ Esta practica consistio en usar un ESP32 para controlar de distantas maneras un 
 
 
 ESP32 solo:
-const int led=33;
-
-
-void setup () {
-Serial. begin (115200); 
-pinMode (Led, OUTPUT) ;
-}
-
-
-void lo0p() {
-digitalWrite(led,1);
-delay (1000);
-digitalwrite(led,0);
-delay (1000);
-}
+1  const int led=33<br>
+2<br>
+3<br>
+4  void setup () {<br>
+5  Serial. begin (115200);<br>
+6  pinMode (Led, OUTPUT) ;<br>
+7  }<br>
+8<br>
+9<br>
+10 void lo0p() {<br>
+11 digitalWrite(led,1);<br>
+12 delay (1000);<br>
+13 digitalwrite(led,0);<br>
+14 delay (1000);<br>
+15 }<br>
 
 https://github.com/user-attachments/assets/6e66b9b6-49fc-4279-bbd0-478fd867dd4a 
 
