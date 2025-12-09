@@ -171,6 +171,10 @@ void loop() {
     delay(100);
 }
 ```
+[ESP32 Bluetooth](https://github.com/user-attachments/assets/a7df4006-0df3-4002-8bfc-e393138ed8cc)
+
+
+
 
 
 https://github.com/user-attachments/assets/81669f9e-aa6b-495b-ab91-c8a8a92758bc
