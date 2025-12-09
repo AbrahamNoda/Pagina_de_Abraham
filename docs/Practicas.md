@@ -145,3 +145,29 @@ void loop() {
   
   
 [Cambio de dirección](https://github.com/user-attachments/assets/4e1e3c5b-193a-47d9-be2c-e228a90f1efe)
+
+### Esp32 Bluetooth:<br>
+
+```
+#include "BluetoothSerial.h"
+BluetoothSerial SerialBT;
+const int led=33;
+void setup() {
+  pinMode(led,OUTPUT);
+    Serial.begin(115200);
+    SerialBT.begin("AbrahamEsp32"); // Nombre del dispositivo Bluetooth
+}
+
+void loop() {
+    if (SerialBT.available()) {
+        String mensaje = SerialBT.readString();
+        Serial.println("Recibido: " + mensaje);
+        if(mensaje == "on" ){
+    digitalWrite(led,1);
+  }
+  else{
+    digitalWrite(led,0);
+    }}
+    delay(100);
+}
+```
