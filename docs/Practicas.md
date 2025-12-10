@@ -146,28 +146,6 @@ void loop() {
   
 [Cambio de dirección](https://github.com/user-attachments/assets/4e1e3c5b-193a-47d9-be2c-e228a90f1efe)
 
-### Esp32 Btn:<br>
-
-```
-const int led=33;
-const int btn=34;
-void setup() {
-  Serial.begin(115200);
-  pinMode(led,OUTPUT);
-  pinMode(btn,INPUT);
-}
-
-void loop() {
-  int estado = digitalRead(btn);
-  if(estado == 1 ){
-    digitalWrite(led,1);
-  }
-  else{
-    digitalWrite(led,0);
-  }
-}
-```
-
 #  Proyecto Final: Carro Robot de Fútbol Controlado por PS4 (ESP32)
 
 ##  Objetivo del Proyecto
