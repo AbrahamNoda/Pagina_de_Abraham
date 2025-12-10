@@ -810,4 +810,17 @@ void setup() {
   }
 }
  ```
+<img src="../recursos/imgs/Fotoplataformaequilibrio1.jpg" alt="Diagrama del sistema" width="420">
+
+<img src="../recursos/imgs/Fotoplataformaequilibrio2.jpg" alt="Diagrama del sistema" width="420">
+
+<img src="../recursos/imgs/Fotoplataformaequilibrio3.jpg" alt="Diagrama del sistema" width="420">
+
+
+[Plataforma fallida](https://github.com/user-attachments/assets/677ff465-29e3-4095-beb5-ffe398fe7f29)
+
+
+[Plataforma efectiva](https://github.com/user-attachments/assets/d8e7728f-5c72-405f-a45d-fa38da1a32a5)
+
+
 
