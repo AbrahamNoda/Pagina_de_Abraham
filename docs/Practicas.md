@@ -667,9 +667,9 @@ void setup() {
  
   ultimoComando = millis();
   ultimoDebug = millis();
-}
+ }
  
-void loop() {
+ void loop() {
   while (SerialBT.available()) {
     char inChar = (char)SerialBT.read();
    
@@ -697,9 +697,9 @@ void loop() {
   if (millis() - ultimoComando > TIMEOUT) {
     volverAlCentro();
   }
-}
+ }
  
-void procesarComando() {
+ void procesarComando() {
   contadorComandos++;
  
   Serial.print("[BT-CMD #");
@@ -753,8 +753,8 @@ void procesarComando() {
     Serial.println("ERROR - Formato invalido");
     SerialBT.println("Error: Formato invalido. Use X,Y");
   }
-}
-void mostrarEstado() {
+  }
+  void mostrarEstado() {
   if (SerialBT.hasClient()) {
     Serial.print("[ESTADO] BT conectado | X=");
   } else {
@@ -768,9 +768,9 @@ void mostrarEstado() {
   Serial.print(" | Sin datos: ");
   Serial.print((millis() - ultimoComando) / 1000);
   Serial.println("s");
-}
+ }
  
-void volverAlCentro() {
+ void volverAlCentro() {
   static bool mensajeMostrado = false;
   static unsigned long ultimoCentrado = 0;
  
