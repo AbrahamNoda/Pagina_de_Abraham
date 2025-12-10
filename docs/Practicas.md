@@ -189,7 +189,7 @@ El proyecto se ejecutó mediante la colaboración de equipos especializados:
 
 Este firmware gestiona la conexión con el control PS4 y utiliza la lógica de tracción diferencial y ajuste de velocidad (con el gatillo R2) para el control del carro.
 
-```cpp
+```
 /**
  * @file Robot_Futbol_PS4_ESP32.ino
  * @brief Código para controlar un carro robot de fútbol usando un ESP32 y un control PS4.
@@ -230,5 +230,6 @@ void loop() {
   if (PS4.isConnected()) {
     // 1. Ajuste de Velocidad con R2
     Speed = map(PS4.R2Value(), 0, 255, 210, 255);
+```
 
 
